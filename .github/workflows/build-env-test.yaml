@@ -50,13 +50,13 @@ jobs:
     #   run: npm test
     - 
       name: Build
-      run: npm run build -- --configuration=production --base-href=/demo/
+      run: npm run build -- --configuration=production --base-href=/demo-github-action/
     - 
       name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v3
       with:
         name: ${{ env.artifactName }}
-        path: ./dist
+        path: ./dist/demo
     -
       name: Deploy to GitHub Pages
       id: deployment
