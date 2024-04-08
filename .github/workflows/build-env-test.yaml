@@ -5,9 +5,9 @@ name: Build for test env
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "dev" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "dev" ]
 
 env:
   artifactName: 'demo-github-action'
